@@ -1,0 +1,572 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="85d9429e-23e0-4f46-b126-c11784742606" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hypertension</ID>
+  <Name>Hypertension</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Hypertension</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5562" scrolltop="-3250" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14164" y="11501" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Hypertension" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Hypertension" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5562</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3250</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="85c744b5-df69-4581-8294-1eecb094d375">
+    <DataSourceViewID>Hypertension</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="59c9440d-5b46-44a4-aa1f-04b39eef0695">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="739a9794-a2db-4fc0-92a1-c1ff175fa536">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f30fd419-62c4-47f0-b647-32c13575ee20">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e4eda862-971f-4150-a023-fc9a91decc45">
+      <ID>Ca</ID>
+      <Name>Ca</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be920417-4909-4387-ae0b-bcb019381def">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7368143-50f0-4a24-b1bd-30252a424a6b">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>ca</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b893f7cb-5eec-45b1-8b92-f2a0e71e00c2">
+      <ID>Chol</ID>
+      <Name>Chol</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42281865-06ec-433d-856d-a97e3f658c30">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf464a6c-ec06-4b7a-a072-02bf8f7754b9">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>chol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7b5f2dc2-433f-463b-abe7-0ce44115a73a">
+      <ID>Cp</ID>
+      <Name>Cp</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f257510e-d1bc-4b2f-a1f5-6af01b7308c5">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edf6e73a-56e6-41de-bd74-1a4ae090ad55">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>cp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="97a2b650-307b-4cee-bfa3-7feb5acbab53">
+      <ID>Exang</ID>
+      <Name>Exang</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43b8e893-df37-4f2e-a769-166f85f3a9ab">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94d2dc8f-6aab-4bff-bfb2-1b7933aee01b">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>exang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bed820e2-1f9d-429e-b9de-06e8cf1398c8">
+      <ID>Fbs</ID>
+      <Name>Fbs</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb2f967e-4842-4821-8156-09e0a043aae5">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7de2b7b-be1a-46a9-ab78-c413aac71ca2">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>fbs</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cb384416-5dab-4b97-b80f-680f4dac4e3a">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c7affc0-f00b-40e0-8ca4-7b280921ec19">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79a11db2-d0a9-464e-860f-afb0c9c87384">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="23d7e9aa-6b39-4686-a771-41b43069eca5">
+      <ID>Oldpeak</ID>
+      <Name>Oldpeak</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="df83789e-99fa-48cb-b560-ebadd02fb3f6">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a59e8051-a933-48f5-a249-c03de7986e48">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>oldpeak</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="064202ce-f3f5-489d-8bb7-22350bd321fb">
+      <ID>Restecg</ID>
+      <Name>Restecg</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16557d54-a7d5-43ae-a6c2-06be80c09ffa">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="577efad5-0eb9-4b08-b98a-65b6bd705fe2">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>restecg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c19f9374-0f8d-44f3-9e6a-f9de2c2be535">
+      <ID>Slope</ID>
+      <Name>Slope</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2fa5898-403a-41b0-a19d-3a5b8fd43cb3">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3afaf99c-df2e-4902-a12d-a08f606f8053">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>slope</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b08a5d1a-2b40-44f1-852e-caf23db42ca3">
+      <ID>Target</ID>
+      <Name>Target</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1fe9b2ef-3ded-499d-8fff-47ef58efc78d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5bfbda87-0b22-4184-8bcd-8aeceac23ce5">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>target</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e8e69462-d60a-4127-ab2c-208c787fd392">
+      <ID>Thal</ID>
+      <Name>Thal</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="57ce19a2-9ff9-4fb9-a700-27081de4f254">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6f784d4-1284-488a-878f-6ea28702fc4b">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>thal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b208d4b9-b843-451d-ac55-caaaf4662ade">
+      <ID>Thalach</ID>
+      <Name>Thalach</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6f0973f-ebd2-4f79-9e6c-44df4910c255">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ef5e63b-0249-4c4f-bf0d-12509888f4a4">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>thalach</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="39606edf-d937-441f-9d1e-4de6153f704c">
+      <ID>Trestbps</ID>
+      <Name>Trestbps</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41512729-05d2-4bd1-96d0-119ec0ad6a7f">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d84dfef-3b2b-462a-bbfb-dd3b3a10146c">
+            <TableID>dbo_Hypertension</TableID>
+            <ColumnID>trestbps</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="75868078-2ff2-4164-8601-3cb19799804a">
+      <ID>Hypertension</ID>
+      <Name>Hypertension_DecisionTree</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="20ec8005-11ae-45bb-9e21-1056c7b4513c">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="7c656680-4d6c-4a13-9017-dd20e6c1f1a3">
+          <ID>Ca</ID>
+          <Name>Ca</Name>
+          <SourceColumnID>Ca</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dddc395e-395c-4be1-b260-2ab5ef813bd3">
+          <ID>Chol</ID>
+          <Name>Chol</Name>
+          <SourceColumnID>Chol</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="5bd29899-571e-4652-a7ae-f9206682288c">
+          <ID>Cp</ID>
+          <Name>Cp</Name>
+          <SourceColumnID>Cp</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ad094918-0bcf-4c35-8015-de449ec834c4">
+          <ID>Exang</ID>
+          <Name>Exang</Name>
+          <SourceColumnID>Exang</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="17c6f4dc-cb97-4790-ae92-c3d044f5095e">
+          <ID>Fbs</ID>
+          <Name>Fbs</Name>
+          <SourceColumnID>Fbs</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9c0c145f-f1df-4ba0-8b4d-0cb4c481c5b7">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="74162177-d595-4ff0-b1b2-4bdd16cdc661">
+          <ID>Oldpeak</ID>
+          <Name>Oldpeak</Name>
+          <SourceColumnID>Oldpeak</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f452e030-149b-4f5e-8d10-d965662c6036">
+          <ID>Restecg</ID>
+          <Name>Restecg</Name>
+          <SourceColumnID>Restecg</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="791e74c4-e338-4d9c-b87c-2e3a7c6d95ee">
+          <ID>Slope</ID>
+          <Name>Slope</Name>
+          <SourceColumnID>Slope</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="765b9325-2885-4bb3-a12c-0c866b400e1a">
+          <ID>Target</ID>
+          <Name>Target</Name>
+          <SourceColumnID>Target</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="6e2c1fee-b632-4b09-a05d-183e03cd2d16">
+          <ID>Thal</ID>
+          <Name>Thal</Name>
+          <SourceColumnID>Thal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="509a7f21-a8ca-4d22-8153-85992b3fa860">
+          <ID>Thalach</ID>
+          <Name>Thalach</Name>
+          <SourceColumnID>Thalach</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="aea344c2-b50e-4410-9190-3b0c09f2d6d0">
+          <ID>Trestbps</ID>
+          <Name>Trestbps</Name>
+          <SourceColumnID>Trestbps</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="66170d67-4114-46c5-9975-3b0aae9f850a">
+      <ID>Clustering</ID>
+      <Name>Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="5c6b61d2-24b0-4865-8287-7c704356c032">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bb20bd7e-0604-4e14-be5c-c34db1640271">
+          <ID>Ca</ID>
+          <Name>Ca</Name>
+          <SourceColumnID>Ca</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8a48f6db-8d22-4db5-bb0c-8746e88922d4">
+          <ID>Chol</ID>
+          <Name>Chol</Name>
+          <SourceColumnID>Chol</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="230b0691-e5d9-4e3b-bb32-328dd209157e">
+          <ID>Cp</ID>
+          <Name>Cp</Name>
+          <SourceColumnID>Cp</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1065629b-7f25-49b3-8571-827ad1c77adc">
+          <ID>Exang</ID>
+          <Name>Exang</Name>
+          <SourceColumnID>Exang</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="33295247-8134-42d5-af19-e8f6ccb5d1b3">
+          <ID>Fbs</ID>
+          <Name>Fbs</Name>
+          <SourceColumnID>Fbs</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="68e1cfcc-e567-43c4-aabf-0eaf0f9c10e9">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="fe614dc0-1214-4066-a8da-2f6b54e47312">
+          <ID>Oldpeak</ID>
+          <Name>Oldpeak</Name>
+          <SourceColumnID>Oldpeak</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="58a6c185-a983-4885-92a3-2e402fd220b3">
+          <ID>Restecg</ID>
+          <Name>Restecg</Name>
+          <SourceColumnID>Restecg</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2676cf31-133a-487e-b02b-0ba375cb3e24">
+          <ID>Slope</ID>
+          <Name>Slope</Name>
+          <SourceColumnID>Slope</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0575663c-ed88-4754-8d8b-99e96fe740a1">
+          <ID>Target</ID>
+          <Name>Target</Name>
+          <SourceColumnID>Target</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="ae139d49-60c4-4afd-92e6-9e99c4127f53">
+          <ID>Thal</ID>
+          <Name>Thal</Name>
+          <SourceColumnID>Thal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="55f8af16-7a56-4dff-9be8-883a5f11a0e2">
+          <ID>Thalach</ID>
+          <Name>Thalach</Name>
+          <SourceColumnID>Thalach</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ab745ea7-8a51-4716-8922-8747f6d1e261">
+          <ID>Trestbps</ID>
+          <Name>Trestbps</Name>
+          <SourceColumnID>Trestbps</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="407dc9ff-5572-4d8e-a515-32d8f6ee3c86">
+      <ID>NN</ID>
+      <Name>NN</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="f025b25b-81d9-4367-a754-4126e32c4402">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3bd6568e-0680-480e-b7e0-d16093403137">
+          <ID>Ca</ID>
+          <Name>Ca</Name>
+          <SourceColumnID>Ca</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="38b0e6c1-1aae-4abb-a70e-2cd4042c4c96">
+          <ID>Chol</ID>
+          <Name>Chol</Name>
+          <SourceColumnID>Chol</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="50bbc959-fe94-453b-bb30-e9163303aba0">
+          <ID>Cp</ID>
+          <Name>Cp</Name>
+          <SourceColumnID>Cp</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d53cd81d-6ceb-4d6d-b97b-75e3d35ae2f9">
+          <ID>Exang</ID>
+          <Name>Exang</Name>
+          <SourceColumnID>Exang</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="240870c2-1649-4a22-ab03-3cb2082275c2">
+          <ID>Fbs</ID>
+          <Name>Fbs</Name>
+          <SourceColumnID>Fbs</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b5eae94d-e392-4a03-9477-29afe52e5554">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="2c4ad319-07b2-4e7f-b204-e29f579670c9">
+          <ID>Oldpeak</ID>
+          <Name>Oldpeak</Name>
+          <SourceColumnID>Oldpeak</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e6d50929-0946-4a3e-8a6c-f24069eb77db">
+          <ID>Restecg</ID>
+          <Name>Restecg</Name>
+          <SourceColumnID>Restecg</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cd1666f0-936b-44b6-b0b7-044368e8491b">
+          <ID>Slope</ID>
+          <Name>Slope</Name>
+          <SourceColumnID>Slope</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="959cc419-2b7c-42ce-8bd9-c9a377945962">
+          <ID>Target</ID>
+          <Name>Target</Name>
+          <SourceColumnID>Target</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="4cc1a16d-b4aa-42ca-bdb8-9913289844c5">
+          <ID>Thal</ID>
+          <Name>Thal</Name>
+          <SourceColumnID>Thal</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="214e67b7-2f88-4a17-b643-5a4ec0476835">
+          <ID>Thalach</ID>
+          <Name>Thalach</Name>
+          <SourceColumnID>Thalach</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="311df12b-887c-408a-8d2a-b9175b155267">
+          <ID>Trestbps</ID>
+          <Name>Trestbps</Name>
+          <SourceColumnID>Trestbps</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

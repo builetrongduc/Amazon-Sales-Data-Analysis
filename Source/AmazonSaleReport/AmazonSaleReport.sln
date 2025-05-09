@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "AmazonSaleReport", "AmazonSaleReport\AmazonSaleReport.rptproj", "{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Debug|Default.ActiveCfg = Debug
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Debug|Default.Build.0 = Debug
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Debug|Default.Deploy.0 = Debug
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.DebugLocal|Default.Build.0 = DebugLocal
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Release|Default.ActiveCfg = Release
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Release|Default.Build.0 = Release
+		{1FCDA1C6-1127-4EB4-A9D8-E25AC96AB295}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91BC163E-F5DF-4D2B-B513-0C4E0CE99AA6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,105 @@
+//1. Tổng doanh thu theo ngày trong tháng 4.(rollup-drilldown)
+SELECT
+	[Measures].[Amount] ON COLUMNS, [Dim Date].[Day].[Day] ON ROWS 
+FROM [Amazon Sales]
+WHERE [Dim Date].[Month].[4]
+
+//2. Tính doanh thu theo từng loại sản phẩm.(rollup-drilldown)
+SELECT
+	[Measures].[Amount] ON COLUMNS,
+	[Dim Product].[Category].[Category] ON ROWS
+FROM [Amazon Sales]
+
+
+//3. Tính tổng doanh thu của loại sản phẩm "Set" trong tháng 4.(Slice and Dice)
+
+SELECT [Measures].[Amount] ON COLUMNS 
+FROM [Amazon Sales] 
+WHERE ([Dim Product].[Category].[Set], [Dim Date].[Month].[4])
+
+
+//4. Số đơn hàng bị hủy theo ngày trong tháng 5
+SELECT
+	[Measures].[OrderID Count] ON COLUMNS, [Dim Date].[Day].Members ON ROWS
+FROM [Amazon Sales]
+WHERE([Dim Date].[Month].[5], [Dim Status].[Status].[Cancelled])
+
+
+//5. Thống kê số lượng đơn hàng bị hủy trong tháng 5 theo State -> City (CrossJoin)
+SELECT
+	[Measures].[OrderID Count] ON COLUMNS,
+	non empty [Dim Location].[State].[State]*[Dim Location].[City].[City] ON ROWS
+FROM [Amazon Sales]
+WHERE ([Dim Date].[Month].[5], [Dim Status].[Status].[Cancelled])
+
+
+//6. Thống kê số đơn hàng "B2B" theo tháng.
+SELECT
+	[Measures].[OrderID Count] ON COLUMNS,
+	non empty [Dim Date].[Month].Members ON ROWS
+FROM [Amazon Sales]
+WHERE [Fact].[B2B].[TRUE]
+
+
+//7. Tính tổng doanh thu các đơn hàng thực hiện bởi Amazon.
+SELECT
+	[Measures].[Amount] on COLUMNS
+FROM [Amazon Sales]
+WHERE [Dim Fulfilment].[Fulfilment].[Amazon]
+
+
+//8. Tìm các ngày tương ứng với tháng có doanh thu > 1000000
+SELECT
+	[Measures].[Amount] on COLUMNS,
+	([Dim Date].[Month].[Month],FILTER([Dim Date].[Day].[Day], [Measures].[Amount] > 1000000)) on ROWS
+FROM [Amazon Sales]
+
+
+//9. Tìm 5 sản phẩm thuộc loại Blouse có doanh số cao nhất(TOPCOUNT)
+SELECT
+	[Measures].[Amount] on columns,
+	TopCount([Dim Product].[SKU].[SKU], 5, [Measures].[Amount]) ON rows
+FROM [Amazon Sales]
+WHERE [Dim Product].[Category].[Blouse]
+
+
+//10. Tìm sản phẩm có nhiều doanh thu nhất và thống kê doanh thu của sản phẩm đó theo tháng
+SELECT
+	[Measures].[Amount] on COLUMNS,
+	(TOPCOUNT([Dim Product].[SKU].[SKU], 1, [Measures].[Amount]), [Dim Date].[Month].Children) ON ROWS
+FROM [Amazon Sales]
+
+
+//11. Tìm sản phẩm được mua nhiều nhất
+SELECT
+  TOPCOUNT([SKU].[SKU].Members, 1, [Measures].[Quantity]) ON ROWS,
+  [Measures].[Quantity] ON COLUMNS
+FROM [Amazon Sales]
+
+
+//12. Tính tổng doanh thu theo chi tiết trạng thái đơn hàng
+SELECT
+  ([Status].[Status].Members, [Status Detail].[Status Detail].Members) ON ROWS,
+  [Measures].[Amount] ON COLUMNS
+FROM [Amazon Sales]
+
+
+//13. Tổng số lượng bán được theo từng danh mục
+SELECT
+  [Category].[Category].Members ON ROWS,
+  [Measures].[Quantity] ON COLUMNS
+FROM [Amazon Sales]
+
+
+//14. Tính tổng doanh số trung bình hàng tháng:
+SELECT
+	[Measures].[Avg Amount] on columns,
+	[Dim Date].[Month].[Month] ON ROWS
+FROM [Amazon Sales]
+
+
+//15. Liệt kê các sản phẩm tương ứng với phân loại được tiêu thụ với số lượng lớn (lớn hơn 100)
+SELECT
+	[Measures].[Quantity] on COLUMNS,
+	([Dim Product].[Category].[Category],FILTER([Dim Product].[SKU].[SKU], [Measures].[Quantity] > 100)) on ROWS
+FROM [Amazon Sales]

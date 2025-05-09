@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_AmazonSales</Database>
+    <Server>CTHI\MSSQLS2</Server>
+    <ConnectionString>Data Source=CTHI\MSSQLS2;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>x60qsbm1hmpnx1MNqEKz9dVJMz8=4/19/2024 10:03:21 PM4/19/2024 10:03:20 PM</TimeStamp>
+        <ID>
+          <String>Amazon Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>DEdwXUu2GW9DHtER3nYnPdoPMXA=4/19/2024 10:03:40 PM4/19/2024 10:03:39 PM</TimeStamp>
+        <ID>
+          <String>Amazon Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8atqo4vFjLafniJ4RFcvQCfh05g=5/21/2024 5:05:03 AM4/19/2024 10:03:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nEbfnfdBq7R0S6J5zhXpUjgh040=4/19/2024 10:20:03 PM4/19/2024 10:03:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Htajq2hBaA2bND/OqQpoWMPEK+4=4/19/2024 11:31:07 PM4/19/2024 10:03:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Oj+QDhOdyZuNIMQXMUQtmiH9UHU=4/19/2024 10:21:23 PM4/19/2024 10:03:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Fulfilment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dRlHS1glCaSZkMU5hV7NapNGWjE=4/19/2024 10:11:19 PM4/19/2024 10:03:54 PM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ht2M3QEX1UWxqMJqi+PjAG0MG0o=4/19/2024 11:34:54 PM4/19/2024 11:34:53 PM</TimeStamp>
+        <ID>
+          <String>Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>8KKlSAcegOc/lrmq1RNosERT/zg=5/21/2024 5:34:44 AM4/19/2024 10:04:31 PMsT71eu1PZeOur8ag6WEttHXB0fM=5/21/2024 5:10:24 AM4/19/2024 10:04:31 PM</TimeStamp>
+        <ID>
+          <String>Amazon Sales</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>TmEG/tFxvuvPleArNyumaBBw0nc=4/18/2024 6:56:32 PM4/18/2024 6:56:32 PM</TimeStamp>
+      <ID>
+        <String>SSAS_AmazonSales</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-05-20T22:34:50.303333Z</LastDeployed>
+</DeploymentSnapshot>
