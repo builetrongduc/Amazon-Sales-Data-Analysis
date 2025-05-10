@@ -31,17 +31,17 @@ This project utilizes the following tools and frameworks:
 
 
 ## OLAP Operations
-- Roll-up/Drill-down: Aggregation by year → quarter → month.
-- Slice: Filtering sales by region.
-- Dice: Multidimensional filtering (e.g., sales in Q4 for Blouse in India).
-- Pivot: Restructuring data to analyze sales from different perspectives.
+- **Roll-up/Drill-down**: Aggregation by year → quarter → month.
+- **Slice**: Filtering sales by region.
+- **Dice**: Multidimensional filtering (e.g., sales in Q4 for Blouse in India).
+- **Pivot**: Restructuring data to analyze sales from different perspectives.
 
 
 ## Key Analysis & Finding
-- Top Products: Identified best-selling and most profitable items.
-- Sales Trends: Detected sales peaks during holidays and Q4.
-- Category Analysis: Detected which category was the most profitable.
-- Regional Insights: Maharashtra consistently outperformed other regions.
+- **Top Products**: Identified best-selling and most profitable items.
+- **Sales Trends**: Detected sales peaks during holidays and Q4.
+- **Category Analysis**: Detected which category was the most profitable.
+- **Regional Insights**: Maharashtra consistently outperformed other regions.
 
 ## Sample Visualization
 - Sales over time (by year/month/quarter)
