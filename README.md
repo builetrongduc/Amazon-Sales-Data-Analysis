@@ -1,33 +1,17 @@
 # Amazon Sales Data Analysis
 
-Welcome to the **Amazon Sales Data Analysis** project! This repository contains data analysis scripts, visualizations, and insights derived from Amazon sales data. The goal of this project is to explore and uncover trends, patterns, and actionable insights from the dataset.
+This project contains data analysis scripts, visualizations, and insights derived from Amazon sales data. The goal of this project is to extract valuable business insights that support decision-making processes related to inventory management, revenue growth, and customer behavior.
 
----
-
-## Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
-## About
+## Project Objectives
 
 The **Amazon Sales Data Analysis** project is focused on analyzing sales data to provide insights into:
-- Sales trends over time
-- Best-selling products and categories
-- Customer purchasing behavior
-- Revenue and profit analysis
-- Seasonal sales patterns
+
+- Identify top-performing products and sales trends.
+- Analyze seasonal impacts on sales volumes.
+- Understand relationships between discounting and profitability.
+- Explore regional performance and product category behaviors.
 
 Through these analyses, businesses and stakeholders can make data-driven decisions to optimize their operations and marketing strategies.
-
----
 
 ## Features
 
@@ -37,22 +21,17 @@ Through these analyses, businesses and stakeholders can make data-driven decisio
 - Customizable parameters for specific queries
 - Interactive visualizations (if applicable)
 
----
-
 ## Technologies Used
 
 This project utilizes the following tools and frameworks:
 
-- **Jupyter Notebook**: For interactive data analysis
-- **Python**: For data analysis and scripting
-- **Pandas**: For data manipulation and analysis
-- **Matplotlib** & **Seaborn**: For data visualization
-- **NumPy**: For numerical operations
+- **Python (Jupyter Notebook)**: Data cleaning and preprocessing.
+- **SSIS**: Data aggregation and transformation using OLAP techniques.
+- **SSAS**: Data modelling (building a star schema)
+- **Power BI**: Interactive data visualization.
 
----
+## Data Warehouse Design
+![Picture1](https://github.com/user-attachments/assets/fc33ae88-7c4f-421b-ab55-89c84eabf455)
 
-## Installation
+- 
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/builetrongduc/Amazon-Sales-Data-Analysis.git
