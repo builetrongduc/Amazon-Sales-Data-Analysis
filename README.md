@@ -27,7 +27,7 @@ This project utilizes the following tools and frameworks:
 - **Power BI**: Interactive data visualization.
 
 ## Data Warehouse Design
-![Picture1](https://github.com/user-attachments/assets/fc33ae88-7c4f-421b-ab55-89c84eabf455)
+![Picture1](https://github.com/user-attachments/assets/e4894b43-ac42-4839-9ecd-3e473dd1a62a)
 
 
 ## OLAP Operations
